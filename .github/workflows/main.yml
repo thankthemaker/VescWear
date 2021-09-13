@@ -49,4 +49,4 @@ jobs:
       with:
         name: apks
         path: |
-          output/**.apk
+          bin/**.apk
