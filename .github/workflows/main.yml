@@ -44,3 +44,9 @@ jobs:
         pip install --upgrade buildozer
     - name: Run buildozer
       run:  buildozer android debug deploy
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: apks
+        path: |
+          output/**.apk
